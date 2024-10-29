@@ -1,0 +1,103 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-communityhub-dev-3ecf2-authRole",
+      "UnauthRoleArn": "arn:aws:iam::423623855943:role/amplify-communityhub-dev-3ecf2-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::423623855943:role/amplify-communityhub-dev-3ecf2-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-communityhub-dev-3ecf2-deployment",
+      "UnauthRoleName": "amplify-communityhub-dev-3ecf2-unauthRole",
+      "StackName": "amplify-communityhub-dev-3ecf2",
+      "StackId": "arn:aws:cloudformation:us-west-2:423623855943:stack/amplify-communityhub-dev-3ecf2/75818330-9330-11ef-9ef3-0a92bcca59f9",
+      "AmplifyAppId": "d388c9qqu3vgwh"
+    }
+  },
+  "storage": {
+    "commHubDymo": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-communityhub-dev-3ecf2-deployment/amplify-cfn-templates/storage/commHubDymo-cloudformation-template.json",
+        "logicalId": "storagecommHubDymo"
+      },
+      "lastPushTimeStamp": "2024-10-26T01:04:15.287Z",
+      "output": {
+        "PartitionKeyName": "userID",
+        "Region": "us-west-2",
+        "Arn": "arn:aws:dynamodb:us-west-2:423623855943:table/commHubUserData-dev",
+        "StreamArn": "arn:aws:dynamodb:us-west-2:423623855943:table/commHubUserData-dev/stream/2024-10-26T01:02:49.815",
+        "PartitionKeyType": "S",
+        "Name": "commHubUserData-dev"
+      },
+      "lastPushDirHash": "r2TxnGv7VfohbEMg5pnLaGhRtYo="
+    }
+  },
+  "auth": {
+    "communityhub860c3b6e": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-communityhub-dev-3ecf2-deployment/amplify-cfn-templates/auth/communityhub860c3b6e-cloudformation-template.json",
+        "logicalId": "authcommunityhub860c3b6e"
+      },
+      "lastPushTimeStamp": "2024-10-26T01:04:15.287Z",
+      "output": {
+        "UserPoolId": "us-west-2_AFeZrowKf",
+        "AppClientIDWeb": "7hk5bdqmr22egco7f99fhfbt9t",
+        "AppClientID": "2fe7hl38t0f929439j1jrfv2v4",
+        "IdentityPoolId": "us-west-2:6c3a339d-24e2-4fbf-be20-52aa8342f22d",
+        "UserPoolArn": "arn:aws:cognito-idp:us-west-2:423623855943:userpool/us-west-2_AFeZrowKf",
+        "IdentityPoolName": "communityhub860c3b6e_identitypool_860c3b6e__dev",
+        "UserPoolName": "communityhub860c3b6e_userpool_860c3b6e"
+      },
+      "lastPushDirHash": "HU+nsrw8INVguXI+xb2yEmoOOMo="
+    }
+  },
+  "api": {
+    "communityhub": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "qhg527jpg5gwjegvofaszbblee",
+        "GraphQLAPIEndpointOutput": "https://u3venrtlwbbqlfl2eqj4hsz7yq.appsync-api.us-west-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-mure2fychnfiheveio7kxrkaxq"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-communityhub-dev-3ecf2-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apicommunityhub"
+      },
+      "lastPushTimeStamp": "2024-10-26T01:04:15.287Z",
+      "lastPushDirHash": "0FnEwejRI07Gcang54Ovx62LV3c="
+    }
+  }
+}

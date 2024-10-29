@@ -1,0 +1,35 @@
+{
+  "aws_project_region": "us-west-2",
+  "aws_dynamodb_all_tables_region": "us-west-2",
+  "aws_dynamodb_table_schemas": [
+    {
+      "tableName": "commHubUserData-dev",
+      "region": "us-west-2"
+    }
+  ],
+  "aws_cognito_identity_pool_id": "us-west-2:6c3a339d-24e2-4fbf-be20-52aa8342f22d",
+  "aws_cognito_region": "us-west-2",
+  "aws_user_pools_id": "us-west-2_AFeZrowKf",
+  "aws_user_pools_web_client_id": "7hk5bdqmr22egco7f99fhfbt9t",
+  "oauth": {},
+  "aws_cognito_username_attributes": [],
+  "aws_cognito_social_providers": [],
+  "aws_cognito_signup_attributes": [
+    "EMAIL"
+  ],
+  "aws_cognito_mfa_configuration": "OFF",
+  "aws_cognito_mfa_types": [
+    "SMS"
+  ],
+  "aws_cognito_password_protection_settings": {
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": []
+  },
+  "aws_cognito_verification_mechanisms": [
+    "EMAIL"
+  ],
+  "aws_appsync_graphqlEndpoint": "https://u3venrtlwbbqlfl2eqj4hsz7yq.appsync-api.us-west-2.amazonaws.com/graphql",
+  "aws_appsync_region": "us-west-2",
+  "aws_appsync_authenticationType": "API_KEY",
+  "aws_appsync_apiKey": "da2-mure2fychnfiheveio7kxrkaxq"
+}

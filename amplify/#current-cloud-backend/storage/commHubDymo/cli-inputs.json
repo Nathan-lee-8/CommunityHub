@@ -1,0 +1,10 @@
+{
+  "resourceName": "commHubDymo",
+  "tableName": "commHubUserData",
+  "partitionKey": {
+    "fieldName": "userID",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
